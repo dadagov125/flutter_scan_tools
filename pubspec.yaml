@@ -11,7 +11,7 @@ platforms:
   android:
   ios:
 dependencies:
-  camera: ^0.8.0
+  camera: ^0.10.1
   flutter:
     sdk: flutter
   google_mlkit_commons: ^0.2.0

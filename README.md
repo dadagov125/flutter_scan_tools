@@ -1,6 +1,14 @@
 
-#Flutter scan tools
+# Flutter scan tools
 Flutter tool pack for scanning credit card, qr code, mrz.
+
+#### Supported scanners
+
+| Scanner       | IOS       | Android  |
+| ------------- |:------------:| ---------:|
+| Credit card   | supported    | supported |
+| QR-code       |  will be soon |   will be soon |
+| MRZ           | will be soon  |    will be soon |
 
 
 ## Before usage
@@ -43,4 +51,6 @@ void _startScan() async {
 ```
 
 ## Additional information
-....
+##### Tested on:
+- IPhone 13 Pro (IOS 15.5)
+- Redmi Note 8 (Android 9 PKQ1.190616.001)

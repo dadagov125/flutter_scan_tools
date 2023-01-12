@@ -21,7 +21,21 @@ packages:
       name: camera
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.8.0"
+    version: "0.10.1"
+  camera_android:
+    dependency: transitive
+    description:
+      name: camera_android
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.10.0+5"
+  camera_avfoundation:
+    dependency: transitive
+    description:
+      name: camera_avfoundation
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.9.8+6"
   camera_platform_interface:
     dependency: transitive
     description:
@@ -29,6 +43,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.3.0"
+  camera_web:
+    dependency: transitive
+    description:
+      name: camera_web
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.3.0+1"
   characters:
     dependency: transitive
     description:
@@ -90,15 +111,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.1"
+  flutter_plugin_android_lifecycle:
+    dependency: transitive
+    description:
+      name: flutter_plugin_android_lifecycle
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.7"
   flutter_scan_tools:
     dependency: "direct main"
     description:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.2"
   flutter_test:
     dependency: "direct dev"
+    description: flutter
+    source: sdk
+    version: "0.0.0"
+  flutter_web_plugins:
+    dependency: transitive
     description: flutter
     source: sdk
     version: "0.0.0"
@@ -122,7 +155,7 @@ packages:
       name: js
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.6.5"
+    version: "0.6.4"
   lints:
     dependency: transitive
     description:
@@ -158,13 +191,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.8.1"
-  pedantic:
-    dependency: transitive
-    description:
-      name: pedantic
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.11.1"
   permission_handler:
     dependency: "direct main"
     description:

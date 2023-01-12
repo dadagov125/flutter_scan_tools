@@ -4,6 +4,7 @@ class CardNumber {
     required this.number,
   });
 
+  @Deprecated('Will be removed in version 1.0.0')
   CardNumber.unknow() : this(type: CardType.Unknown, number: '');
 
   final CardType type;
@@ -16,6 +17,7 @@ class CardNumber {
 }
 
 enum CardType {
+  @Deprecated('Will be removed in version 1.0.0')
   Unknown,
   Humo,
   UzCard,

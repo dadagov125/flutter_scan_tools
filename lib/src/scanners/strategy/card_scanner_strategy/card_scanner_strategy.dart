@@ -55,8 +55,12 @@ class CardScannerStrategy extends ScannerStrategy<CardScanResul> {
       }
     }
 
+    if (cardNumber == null) {
+      throw Exception('Card number not found');
+    }
+
     return CardScanResul(
-      cardNumber: cardNumber ?? CardNumber.unknow(),
+      cardNumber: cardNumber,
       expiry: expiry,
       holder: holder,
     );
