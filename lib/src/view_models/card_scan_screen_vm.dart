@@ -2,7 +2,6 @@ import 'dart:async';
 
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_scan_tools/src/entities/card_number.dart';
 import 'package:flutter_scan_tools/src/entities/card_scan_options.dart';
 import 'package:flutter_scan_tools/src/entities/card_scan_result.dart';
 import 'package:flutter_scan_tools/src/scanners/scanner.dart';
@@ -47,19 +46,17 @@ class CardScanScreenVM extends CommonCameraVM {
     try {
       final result = await _scanner.scan(image);
 
-      if (result.cardNumber.type != CardType.Unknown) {
-        if (options.requireExpiry && result.expiry == null) {
-          return;
-        }
-        if (options.requireHolder && result.holder == null) {
-          return;
-        }
-
-        dispose();
-        Navigator.of(context).pop(result);
+      if (options.requireExpiry && result.expiry == null) {
+        return;
       }
+      if (options.requireHolder && result.holder == null) {
+        return;
+      }
+
+      dispose();
+      Navigator.of(context).pop(result);
     } on Object catch (error) {
-      this.showMessage(error.toString());
+      debugPrint(error.toString());
     }
   }
 }
