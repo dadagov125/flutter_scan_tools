@@ -1,6 +1,6 @@
 name: flutter_scan_tools
 description: Flutter tool pack for scanning credit card, qr code, mrz.
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/dadagov125/flutter_scan_tools
 repository: https://github.com/dadagov125/flutter_scan_tools
 
